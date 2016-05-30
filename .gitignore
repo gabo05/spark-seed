@@ -1,0 +1,5 @@
+.gradle/*
+build/*
+classes/*
+repos/*
+src/com/public/jslibs

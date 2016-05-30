@@ -1,0 +1,29 @@
+{
+  "name": "spark-seed",
+  "homepage": "https://github.com/gabo05/spark-seed",
+  "authors": [
+    "gabo05 <san.gaby05@gmail.com>"
+  ],
+  "description": "Seed for spark application",
+  "main": "",
+  "moduleType": [
+    "java"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9"
+  },
+  "keywords": [
+    "spark",
+    "angular",
+    "java"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

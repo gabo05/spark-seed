@@ -1,0 +1,19 @@
+<html ng-app="seedapp">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Spark Seed</title>
+        
+        <!--Import site css-->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+	<body>
+		<div ng-controller="seedController as seed">
+			<h1>{{ seed.info.message }}</h1>
+		</div>
+		<script type="text/javascript" src="jslibs/angular/angular.min.js"></script>
+		<script type="text/javascript" src="jsapp/app.js"></script>
+		<script type="text/javascript" src="jsapp/controllers/seed-controller.js"></script>
+	</body>
+</html>
