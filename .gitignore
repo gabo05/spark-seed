@@ -3,3 +3,5 @@ build/*
 classes/*
 repos/*
 src/com/public/jslibs
+src/com/public/node_modules
+src/com/public/dist

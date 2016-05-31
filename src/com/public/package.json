@@ -1,0 +1,17 @@
+{
+  "name": "spark-seed",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabo05/spark-seed.git"
+  },
+  "dependencies": {
+    "bower": "^1.7.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}
