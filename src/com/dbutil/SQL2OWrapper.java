@@ -12,7 +12,7 @@ public class SQL2OWrapper{
 
 	private static DBOptions defaults = new DBOptions("", "", "", "", "");
 
-	public static Sql2o getSql2O(DBOptions options){
+	public Sql2o getSql2O(DBOptions options){
 		Sql2o sql2o = new Sql2o("jdbc:postgresql://" + options.getDbHost() + ":" + options.getDbPort() + "/" + options.getDatabase(),
             options.getDbUsername(), options.getDbPassword(), new PostgresQuirks() {
 	        {
@@ -23,7 +23,7 @@ public class SQL2OWrapper{
 	    return sql2o;
 	}
 
-	public static Sql2o getSql2O(){
+	public Sql2o getSql2O(){
 		Sql2o sql2o = new Sql2o("jdbc:postgresql://" + defaults.getDbHost() + ":" + defaults.getDbPort() + "/" + defaults.getDatabase(),
             defaults.getDbUsername(), defaults.getDbPassword(), new PostgresQuirks() {
 	        {

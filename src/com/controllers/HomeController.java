@@ -14,8 +14,18 @@ import com.util.*;
 //Spark Extended
 import com.spark.extended.*;
 
+//Sql2O
+import com.dbutil.SQL2OWrapper;
+
 public class HomeController extends ControllerBase{
 	
+	public HomeController(){
+		super();
+	}
+	public HomeController(SQL2OWrapper _sqlO){
+		super(_sqlO);
+	}
+
 	@HttpMethod(path="/home/hello", type=HttpMethodType.GET)
 	public Object hello(Request request, Response response){
 		SimpleMessage message = new SimpleMessage("OK", "We can code it!");

@@ -4,7 +4,16 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import com.dbutil.SQL2OWrapper;
+
 public class ControllerBase{
+	protected SQL2OWrapper sqlO;
+
+	public ControllerBase(){
+	}
+	public ControllerBase(SQL2OWrapper _sqlO){
+		this.sqlO = _sqlO;
+	}
 	public ControllerFilterMessage before(Request request, Response response){
 		return new ControllerFilterMessage(true, "");
 	}

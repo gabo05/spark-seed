@@ -14,12 +14,18 @@ import com.spark.extended.*;
 //Controllers
 import com.controllers.*;
 
+//Sql2O
+import com.dbutil.SQL2OWrapper;
+
 public class Main extends SparkApplication{
     public static void main(String[] args) {
         
         externalFilesLocation("/src/com/public");
         //port(4567)
-        registerController(new HomeController());
-        registerController(new AccountController());
+
+        SQL2OWrapper sqlO = new SQL2OWrapper();
+
+        registerController(new HomeController(sqlO));
+        registerController(new AccountController(sqlO));
     }
 }
